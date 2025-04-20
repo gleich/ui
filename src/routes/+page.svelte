@@ -8,7 +8,10 @@
 	import Color from './color.svelte';
 </script>
 
-<DynamicHead title="gleich/ui" description="Matt Gleich's UI component library for Svelte" />
+<DynamicHead
+	title="gleich/ui"
+	description="Shared UI components used across a number of my personal projects."
+/>
 
 <main>
 	<div class="title">
@@ -18,6 +21,8 @@
 
 		<h1>UI</h1>
 	</div>
+
+	<p class="description">Shared UI components used across a number of my personal projects.</p>
 
 	<section>
 		<h2>Colors</h2>
@@ -106,6 +111,10 @@
 
 	section h2 {
 		margin-bottom: 10px;
+	}
+
+	.description {
+		margin-top: 20px;
 	}
 
 	.logo {

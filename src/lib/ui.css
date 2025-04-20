@@ -79,8 +79,6 @@ html {
 
 	/* default font configuration */
 	font-feature-settings: 'zero';
-	font-family: 'IBM Plex Sans';
-	font-weight: 500;
 	font-size: 16px;
 
 	/* font optimizations */
@@ -157,7 +155,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Inter';
 	font-weight: 800;
 }
 

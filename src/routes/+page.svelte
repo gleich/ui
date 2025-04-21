@@ -20,7 +20,7 @@
 			<Logo />
 		</div>
 
-		<h1>UI</h1>
+		<h1>@gleich/ui</h1>
 	</div>
 
 	<p class="description">Shared UI components used across a number of my personal projects.</p>
@@ -47,22 +47,22 @@
 	</section>
 
 	<section>
-		<h2>Links</h2>
+		<h2>&lt;a&gt;&lt;/a&gt;</h2>
 		<a href="https://mattglei.ch" target="_blank">mattglei.ch</a>
 	</section>
 
 	<section>
-		<h2>Button</h2>
+		<h2>&lt;Button/&gt;</h2>
 		<button class="button-demo">Demo</button>
 	</section>
 
 	<section>
-		<h2>Error</h2>
+		<h2>&lt;Error/&gt;</h2>
 		<Error msg="Error demo" />
 	</section>
 
 	<section>
-		<h2>Image</h2>
+		<h2>&lt;Image/&gt;</h2>
 		<Image
 			src="https://mattglei.ch/opengraph.png"
 			width={1200}
@@ -72,26 +72,26 @@
 	</section>
 
 	<section>
-		<h2>Scrolling</h2>
+		<h2>&lt;Scrolling/&gt;</h2>
 		<div class="scrolling-demo">
 			<Scrolling>This text scrolls when the text element overflows</Scrolling>
 		</div>
 	</section>
 
 	<section>
-		<h2>Card</h2>
+		<h2>&lt;Card/&gt;</h2>
 		<Card>
 			<p>Card</p>
 		</Card>
 	</section>
 
 	<section>
-		<h2>Copyright</h2>
+		<h2>&lt;Copyright/&gt;</h2>
 		<Copyright repo="gleich/ui" />
 	</section>
 
 	<section>
-		<h2>Logo</h2>
+		<h2>&lt;Logo/&gt;</h2>
 		<div class="logo-demo">
 			<Logo />
 		</div>
@@ -107,8 +107,12 @@
 
 	h1,
 	h2 {
-		font-family: 'Inter';
+		font-family: 'IBM Plex Mono';
 		font-weight: 800;
+	}
+
+	h2 {
+		font-size: 28px;
 	}
 
 	section {
@@ -121,7 +125,7 @@
 	}
 
 	section h2 {
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 
 	.description {

@@ -3,6 +3,7 @@
 	import Copyright from '$lib/copyright.svelte';
 	import DynamicHead from '$lib/dynamic-head.svelte';
 	import Error from '$lib/error.svelte';
+	import Image from '$lib/image.svelte';
 	import Logo from '$lib/logo.svelte';
 	import Scrolling from '$lib/scrolling.svelte';
 	import Color from './color.svelte';
@@ -58,6 +59,16 @@
 	<section>
 		<h2>Error</h2>
 		<Error msg="Error demo" />
+	</section>
+
+	<section>
+		<h2>Image</h2>
+		<Image
+			src="https://mattglei.ch/opengraph.png"
+			width={1200}
+			height={630}
+			alt="Opengraph demo image"
+		/>
 	</section>
 
 	<section>

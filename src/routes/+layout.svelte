@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import '../lib/ui.css';
+	import '../lib/styles.css';
 
 	const { children }: { children: Snippet } = $props();
 </script>

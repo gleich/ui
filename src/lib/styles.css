@@ -216,11 +216,6 @@ button:hover {
 		inset 0px 1px 8px var(--box-shadow-color);
 }
 
-button:focus {
-	outline: 2px solid var(--blue-foreground);
-	outline-offset: 2px;
-}
-
 ol,
 ul {
 	padding-left: 5px;

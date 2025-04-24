@@ -27,6 +27,11 @@
 		animation: blink 1s infinite;
 	}
 
+	h1 {
+		font-size: 25px;
+		font-family: 'IBM Plex Sans';
+	}
+
 	.container {
 		display: flex;
 		align-items: center;
@@ -35,20 +40,28 @@
 		color: var(--red-foreground);
 		padding: 30px;
 		border-radius: var(--border-radius);
+		border: 1px solid var(--red-border);
 	}
 
-	h1 {
-		font-size: 25px;
-		font-family: 'IBM Plex Sans';
+	@-webkit-keyframes blink {
+		0%,
+		70% {
+			opacity: 100%;
+		}
+		80%,
+		100% {
+			opacity: 30%;
+		}
 	}
 
 	@keyframes blink {
 		0%,
-		100% {
-			opacity: 1;
+		70% {
+			opacity: 100%;
 		}
-		50% {
-			opacity: 0.5;
+		80%,
+		100% {
+			opacity: 30%;
 		}
 	}
 </style>

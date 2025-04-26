@@ -4,6 +4,7 @@ import DynamicHead from './dynamic-head.svelte';
 import Error from './error.svelte';
 import Image from './image.svelte';
 import Logo from './logo.svelte';
+import NavLogo from './nav-logo.svelte';
 import Scrolling from './scrolling.svelte';
 
-export { Card, Copyright, DynamicHead, Error, Image, Logo, Scrolling };
+export { Card, Copyright, DynamicHead, Error, Image, Logo, NavLogo, Scrolling };

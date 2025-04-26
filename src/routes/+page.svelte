@@ -5,6 +5,7 @@
 	import Error from '$lib/error.svelte';
 	import Image from '$lib/image.svelte';
 	import Logo from '$lib/logo.svelte';
+	import NavLogo from '$lib/nav-logo.svelte';
 	import Scrolling from '$lib/scrolling.svelte';
 	import Color from './color.svelte';
 </script>
@@ -17,7 +18,7 @@
 <main>
 	<div class="title">
 		<div class="logo">
-			<Logo />
+			<NavLogo width="60px" />
 		</div>
 
 		<h1>@gleich/ui</h1>
@@ -96,6 +97,11 @@
 			<Logo />
 		</div>
 	</section>
+
+	<section>
+		<h2>&lt;NavLogo/&gt;</h2>
+		<NavLogo width="60px" />
+	</section>
 </main>
 
 <style>
@@ -130,16 +136,6 @@
 
 	.description {
 		margin-top: 20px;
-	}
-
-	.logo {
-		width: 60px;
-		height: 60px;
-		border: 1px solid var(--border);
-		box-shadow: inset var(--box-shadow);
-		border-radius: var(--border-radius);
-		background-color: var(--background);
-		padding: 3px;
 	}
 
 	.title {

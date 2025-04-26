@@ -5,7 +5,7 @@
 </script>
 
 <div class="logo" style:--width={width} style:--height={height}>
-	<Logo />
+	<Logo stroke="6" />
 </div>
 
 <style>

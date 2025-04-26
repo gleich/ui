@@ -102,6 +102,10 @@
 		<h2>&lt;NavLogo/&gt;</h2>
 		<NavLogo width="60px" />
 	</section>
+
+	<div class="copyright">
+		<Copyright repo="gleich/ui" />
+	</div>
 </main>
 
 <style>
@@ -161,6 +165,10 @@
 	.logo-demo {
 		width: 100px;
 		height: 100px;
+	}
+
+	.copyright {
+		margin-top: 40px;
 	}
 
 	@font-face {

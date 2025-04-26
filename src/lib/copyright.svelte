@@ -3,11 +3,9 @@
 </script>
 
 <div class="container">
-	<p class="copyright">
-		© Matt Gleich {new Date().getFullYear()}<span class="all-rights-reserved">
-			. All rights reserved.</span
-		>
-	</p>
+	<a href={`https://github.com/${repo}/blob/main/LICENSE`} target="_blank" class="copyright">
+		© Matt Gleich {new Date().getFullYear()}
+	</a>
 	<a class="github-link" href={`https://github.com/${repo}`} target="_blank">
 		<div class="github-icon">
 			<svg viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg"
@@ -24,12 +22,20 @@
 </div>
 
 <style>
+	a {
+		color: inherit;
+	}
+
 	.container {
 		width: 100%;
 		border-top: 0.5px solid var(--border);
 		padding: 5px 0;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.copyright {
+		text-decoration: none;
 	}
 
 	.github-icon {
@@ -47,11 +53,5 @@
 	.github-link,
 	.copyright {
 		color: grey;
-	}
-
-	@media (max-width: 530px) {
-		.all-rights-reserved {
-			display: none;
-		}
 	}
 </style>

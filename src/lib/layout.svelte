@@ -25,6 +25,7 @@
 
 	.children {
 		display: flex;
+		box-sizing: border-box;
 		align-items: center;
 		flex-direction: column;
 		width: 100%;

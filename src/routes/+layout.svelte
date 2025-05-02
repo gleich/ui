@@ -1,35 +1,12 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import '../lib/styles.css';
-	import FadeUp from '$lib/fade-up.svelte';
+	import './global.css';
+	import Layout from '$lib/layout.svelte';
 
 	const { children }: { children: Snippet } = $props();
 </script>
 
-<FadeUp>
-	<div class="container">
-		<div class="main">
-			{@render children()}
-		</div>
-	</div>
-</FadeUp>
-
-<style>
-	.container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 100vh;
-		overflow: hidden;
-	}
-
-	.main {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		flex: 1;
-		max-width: 1000px;
-		padding: 0 20px;
-		padding-bottom: 0;
-	}
-</style>
+<Layout repo="gleich/ui">
+	{@render children()}
+</Layout>

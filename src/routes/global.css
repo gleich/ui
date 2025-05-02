@@ -1,0 +1,14 @@
+html {
+	font-family: 'IBM Plex Sans';
+	font-weight: 500;
+}
+
+h1,
+h2 {
+	font-family: 'IBM Plex Mono';
+	font-weight: 800;
+}
+
+h2 {
+	font-size: 28px;
+}

@@ -3,7 +3,6 @@
 	import Copyright from '$lib/copyright.svelte';
 	import DynamicHead from '$lib/dynamic-head.svelte';
 	import Error from '$lib/error.svelte';
-	import FadeUp from '$lib/fade-up.svelte';
 	import Image from '$lib/image.svelte';
 	import Logo from '$lib/logo.svelte';
 	import NavLogo from '$lib/nav-logo.svelte';
@@ -49,13 +48,6 @@
 	</section>
 
 	<section>
-		<h2>&lt;FadeUp&gt;&lt;/FadeUp&gt;</h2>
-		<FadeUp>
-			<p>hello world</p>
-		</FadeUp>
-	</section>
-
-	<section>
 		<h2>&lt;a&gt;&lt;/a&gt;</h2>
 		<a href="https://mattglei.ch" target="_blank">mattglei.ch</a>
 	</section>
@@ -78,6 +70,14 @@
 			height={630}
 			alt="Opengraph demo image"
 		/>
+	</section>
+
+	<section>
+		<h2>&lt;Layout&gt;&lt;/Layout&gt;</h2>
+		<p>
+			Causes the entire page to fade up, aligns the content to the middle, makes the width max out
+			at 1040px, and adds padding in all directions.
+		</p>
 	</section>
 
 	<section>
@@ -110,29 +110,9 @@
 		<h2>&lt;NavLogo/&gt;</h2>
 		<NavLogo width="60px" />
 	</section>
-
-	<div class="copyright">
-		<Copyright repo="gleich/ui" />
-	</div>
 </main>
 
 <style>
-	main {
-		font-family: 'IBM Plex Sans';
-		font-weight: 500;
-		margin: 100px 0;
-	}
-
-	h1,
-	h2 {
-		font-family: 'IBM Plex Mono';
-		font-weight: 800;
-	}
-
-	h2 {
-		font-size: 28px;
-	}
-
 	section {
 		border: 1px solid var(--border);
 		padding: 10px;
@@ -173,10 +153,6 @@
 	.logo-demo {
 		width: 100px;
 		height: 100px;
-	}
-
-	.copyright {
-		margin-top: 40px;
 	}
 
 	@font-face {

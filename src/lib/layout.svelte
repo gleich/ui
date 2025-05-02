@@ -6,8 +6,10 @@
 </script>
 
 <div class="container">
-	<div class="children">
-		{@render children()}
+	<div class="main">
+		<div class="page-content">
+			{@render children()}
+		</div>
 		<div class="copyright">
 			<Copyright {repo} />
 		</div>
@@ -23,22 +25,30 @@
 		overflow: hidden;
 	}
 
-	.children {
+	.main {
 		display: flex;
-		box-sizing: border-box;
-		align-items: center;
 		flex-direction: column;
 		width: 100%;
-		animation: fade-up 0.5s ease-out forwards;
-		opacity: 0;
 		flex: 1;
 		max-width: 1040px;
 		padding: 70px 20px;
+		animation: fade-up 0.5s ease-out forwards;
+		opacity: 0;
+	}
+
+	.page-content {
+		flex: 1;
 	}
 
 	.copyright {
 		margin-top: 20px;
 		width: 100%;
+	}
+
+	@media (max-width: 450px) {
+		.main {
+			padding: 50px 10px;
+		}
 	}
 
 	@-webkit-keyframes fade-up {

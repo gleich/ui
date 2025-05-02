@@ -1,15 +1,18 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import '../lib/styles.css';
+	import FadeUp from '$lib/fade-up.svelte';
 
 	const { children }: { children: Snippet } = $props();
 </script>
 
-<div class="container">
-	<div class="main">
-		{@render children()}
+<FadeUp>
+	<div class="container">
+		<div class="main">
+			{@render children()}
+		</div>
 	</div>
-</div>
+</FadeUp>
 
 <style>
 	.container {

@@ -3,6 +3,7 @@
 	import Copyright from '$lib/copyright.svelte';
 	import DynamicHead from '$lib/dynamic-head.svelte';
 	import Error from '$lib/error.svelte';
+	import FadeUp from '$lib/fade-up.svelte';
 	import Image from '$lib/image.svelte';
 	import Logo from '$lib/logo.svelte';
 	import NavLogo from '$lib/nav-logo.svelte';
@@ -45,6 +46,13 @@
 
 			<Color variable="--blue-foreground" />
 		</div>
+	</section>
+
+	<section>
+		<h2>&lt;FadeUp&gt;&lt;/FadeUp&gt;</h2>
+		<FadeUp>
+			<p>hello world</p>
+		</FadeUp>
 	</section>
 
 	<section>

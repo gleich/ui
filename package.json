@@ -1,6 +1,6 @@
 {
 	"name": "@gleich/ui",
-	"version": "1.0.6",
+	"version": "1.1.0",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev --open",

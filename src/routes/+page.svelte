@@ -18,7 +18,7 @@
 <main>
 	<div class="title">
 		<div class="logo">
-			<NavLogo width="60px" />
+			<NavLogo />
 		</div>
 
 		<h1>@gleich/ui</h1>
@@ -108,7 +108,7 @@
 
 	<section>
 		<h2>&lt;NavLogo/&gt;</h2>
-		<NavLogo width="60px" />
+		<NavLogo />
 	</section>
 </main>
 

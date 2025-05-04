@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Logo from './logo.svelte';
 
-	const { width, height = width }: { width: string; height?: string } = $props();
+	const { width = '50px', height = width }: { width: string; height?: string } = $props();
 </script>
 
 <div class="logo" style:--width={width} style:--height={height}>

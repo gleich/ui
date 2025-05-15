@@ -5,11 +5,13 @@
 		gap = 15,
 		delay = 2,
 		speed = 15,
+		pauseOnHover = true,
 		children
 	}: {
 		gap?: number;
-		speed?: number;
 		delay?: number;
+		speed?: number;
+		pauseOnHover?: boolean;
 		children: Snippet;
 	} = $props();
 
@@ -28,6 +30,7 @@
 	style:--delay={`${delay}s`}
 	style:--gradient-width={overflowing ? '10px' : '0px'}
 	style:--gap={overflowing ? `${gap}px` : '0px'}
+	style:--hover-state={pauseOnHover ? 'paused' : 'play'}
 >
 	<div
 		class={`marquee ${overflowing ? 'scroll-animation' : ''}`}
@@ -82,6 +85,10 @@
 		align-items: center;
 		justify-content: center;
 		padding-right: var(--gap);
+	}
+
+	.container:hover .scroll-animation {
+		animation-play-state: var(--hover-state);
 	}
 
 	.scroll-animation {

@@ -33,7 +33,7 @@
 	{alt}
 	{height}
 	{width}
-	style={`${aspectRatio ? `aspect-ratio: ${aspectRatio};` : ''} ${placeholder ? `background-image: url('${placeholder}');` : ''}`}
+	style={`${aspectRatio ? `aspect-ratio: ${aspectRatio};` : ''} ${placeholder && placeholder != '' ? `background-image: url('${placeholder}');` : ''}`}
 />
 
 <style>

@@ -24,7 +24,10 @@
 		<h1>@gleich/ui</h1>
 	</div>
 
-	<p class="description">Shared UI components used across a number of my personal projects.</p>
+	<p class="description">
+		Shared <a href="https://svelte.dev" target="_blank">Svelte</a> components used across a number of
+		my personal projects.
+	</p>
 
 	<section>
 		<h2>Colors</h2>

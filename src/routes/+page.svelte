@@ -29,6 +29,11 @@
 		my personal projects.
 	</p>
 
+	<p class="install">
+		Installed with
+		<span class="install-cmd">npm install -D @gleich/ui</span>
+	</p>
+
 	<section>
 		<h2>Colors</h2>
 
@@ -51,12 +56,12 @@
 	</section>
 
 	<section>
-		<h2>&lt;a&gt;&lt;/a&gt;</h2>
+		<h2>&lt;a/&gt;</h2>
 		<a href="https://mattglei.ch" target="_blank">mattglei.ch</a>
 	</section>
 
 	<section>
-		<h2>&lt;Button/&gt;</h2>
+		<h2>&lt;button/&gt;</h2>
 		<button class="button-demo">Demo</button>
 	</section>
 
@@ -116,6 +121,18 @@
 </main>
 
 <style>
+	.install {
+		margin-top: 5px;
+	}
+
+	.install-cmd {
+		background-color: var(--green-background);
+		color: var(--green-foreground);
+		padding: 0px 5px;
+		border: 1px solid var(--green-border);
+		border-radius: 2px;
+	}
+
 	section {
 		border: 1px solid var(--border);
 		padding: 10px;

@@ -131,6 +131,8 @@
 		padding: 0px 5px;
 		border: 1px solid var(--green-border);
 		border-radius: 2px;
+		font-family: 'IBM Plex Mono';
+		font-size: 15px;
 	}
 
 	section {

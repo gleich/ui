@@ -4,6 +4,7 @@
 	let {
 		title,
 		description,
+		siteName,
 		opengraphImage = {
 			url: 'https://mattglei.ch/opengraph.png',
 			width: '1200',
@@ -14,6 +15,7 @@
 	}: {
 		title: string;
 		description: string;
+		siteName: string;
 		opengraphImage?: OpenGraphImage;
 		keywords?: string[];
 		iconRoot?: string;
@@ -73,9 +75,9 @@
 
 	<!-- opengraph -->
 	<meta property="og:title" content={title} />
-	<meta property="og:description" content={title} />
+	<meta property="og:description" content={description} />
 	<meta property="og:url" content={page.url.href} />
-	<meta property="og:site_name" content="mattglei.ch" />
+	<meta property="og:site_name" content={siteName} />
 	<meta property="og:locale" content="en-US" />
 	<meta property="og:image" content={opengraphImage.url} />
 	<meta property="og:image:width" content={opengraphImage.width} />

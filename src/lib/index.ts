@@ -7,5 +7,6 @@ import Layout from './layout.svelte';
 import Logo from './logo.svelte';
 import NavLogo from './nav-logo.svelte';
 import Scrolling from './scrolling.svelte';
+import { siteName } from './sitename.js';
 
-export { Card, Copyright, DynamicHead, Error, Image, Layout, Logo, NavLogo, Scrolling };
+export { siteName, Card, Copyright, DynamicHead, Error, Image, Layout, Logo, NavLogo, Scrolling };

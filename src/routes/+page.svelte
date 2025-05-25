@@ -121,6 +121,10 @@
 </main>
 
 <style>
+	.title h1 {
+		font-size: 35px;
+	}
+
 	.install {
 		margin-top: 5px;
 	}

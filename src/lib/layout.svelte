@@ -2,11 +2,15 @@
 	import type { Snippet } from 'svelte';
 	import Copyright from './copyright.svelte';
 
-	const { children, repo }: { children: Snippet; repo: string } = $props();
+	const {
+		children,
+		fadeIn = true,
+		repo
+	}: { children: Snippet; fadeIn: boolean; repo: string } = $props();
 </script>
 
 <div class="container">
-	<div class="main">
+	<div class="main" style={`animation: ${fadeIn ? 'fade-up 0.5s ease-out forwards' : 'none'};`}>
 		<div class="page-content">
 			{@render children()}
 		</div>

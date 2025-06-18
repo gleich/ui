@@ -10,7 +10,7 @@
 </script>
 
 <div class="container">
-	<div class="main" style={`animation: ${fadeIn ? 'fade-up 0.5s ease-out forwards' : 'none'};`}>
+	<div class="main" style={fadeIn ? '' : 'animation: none; opacity: 1;'}>
 		<div class="page-content">
 			{@render children()}
 		</div>

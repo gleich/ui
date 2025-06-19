@@ -2,15 +2,11 @@
 	import type { Snippet } from 'svelte';
 	import Copyright from './copyright.svelte';
 
-	const {
-		children,
-		fadeIn = true,
-		repo
-	}: { children: Snippet; fadeIn: boolean; repo: string } = $props();
+	const { children, repo }: { children: Snippet; repo: string } = $props();
 </script>
 
 <div class="container">
-	<div class="main" style={fadeIn ? '' : 'animation: none; opacity: 1;'}>
+	<div class="main">
 		<div class="page-content">
 			{@render children()}
 		</div>
@@ -36,8 +32,6 @@
 		flex: 1;
 		max-width: 1040px;
 		padding: 70px 20px;
-		animation: fade-up 0.5s ease-out forwards;
-		opacity: 0;
 	}
 
 	.page-content {
@@ -52,28 +46,6 @@
 	@media (max-width: 450px) {
 		.main {
 			padding: 50px 10px;
-		}
-	}
-
-	@-webkit-keyframes fade-up {
-		from {
-			opacity: 0;
-			transform: translateY(10px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
-	@keyframes fade-up {
-		from {
-			opacity: 0;
-			transform: translateY(10px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
 		}
 	}
 </style>

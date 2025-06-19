@@ -83,8 +83,8 @@
 	<section>
 		<h2>&lt;Layout/&gt;</h2>
 		<p>
-			Causes the entire page to fade up, aligns the content to the middle, makes the width max out
-			at 1040px, and adds padding in all directions.
+			Aligns the content to the middle, makes the width max out at 1040px, and adds padding in all
+			directions.
 		</p>
 	</section>
 

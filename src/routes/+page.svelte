@@ -72,6 +72,10 @@
 
 	<section>
 		<h2>&lt;Image/&gt;</h2>
+		<p>
+			Allows for a blur hash to be provided and swapped out once the image has loaded in. Similar to
+			Next.js's Image component.
+		</p>
 		<Image
 			src="https://mattglei.ch/opengraph.png"
 			width={1200}

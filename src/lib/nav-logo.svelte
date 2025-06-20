@@ -13,7 +13,7 @@
 		width: var(--width);
 		height: var(--height);
 		border: 1px solid var(--border);
-		box-shadow: inset var(--box-shadow);
+		box-shadow: inset 0px 0px 4px var(--box-shadow-color);
 		background-color: var(--background);
 		border-radius: var(--border-radius);
 		padding: 3px;

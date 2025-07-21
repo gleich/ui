@@ -42,6 +42,10 @@
 			<Color variable="--green-border" />
 			<Color variable="--green-background" />
 
+			<Color variable="--yellow-foreground" />
+			<Color variable="--yellow-background" />
+			<Color variable="--yellow-border" />
+
 			<Color variable="--red-foreground" />
 			<Color variable="--red-background" />
 			<Color variable="--red-border" />
@@ -50,6 +54,7 @@
 			<Color variable="--border" />
 			<Color variable="--background" />
 			<Color variable="--actual-background-color" />
+			<Color variable="--section-name-background-color" />
 
 			<Color variable="--blue-foreground" />
 		</div>

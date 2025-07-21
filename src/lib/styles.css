@@ -13,7 +13,7 @@
 	--actual-background-color: rgb(34, 35, 37);
 	--background: rgb(41, 43, 45);
 	--border: rgb(67, 67, 67);
-	--section-name-background: #343537;
+	--section-name-background-color: #343537;
 
 	--green-foreground: rgb(0 217 107);
 	--green-background: rgb(37 54 48);
@@ -44,7 +44,7 @@
 		--background: #f4f4f4;
 		--actual-background-color: #f4f4f4;
 		--border: rgb(186, 186, 186);
-		--section-name-background: #eaeaea;
+		--section-name-background-color: #eaeaea;
 
 		--green-foreground: rgb(15, 70, 17);
 		--green-background: rgb(179, 228, 183);

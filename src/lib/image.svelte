@@ -46,4 +46,8 @@
 		background-repeat: no-repeat;
 		display: block;
 	}
+
+	img:-moz-loading {
+		color: transparent;
+	}
 </style>

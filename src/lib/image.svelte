@@ -45,9 +45,6 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		display: block;
-	}
-
-	img:-moz-loading {
-		color: transparent;
+		color: transparent; /* stops alt text from showing up in firefox when loading image */
 	}
 </style>

@@ -6,12 +6,14 @@
 		delay = 2,
 		speed = 15,
 		pauseOnHover = true,
+		center = true,
 		children
 	}: {
 		gap?: number;
 		delay?: number;
 		speed?: number;
 		pauseOnHover?: boolean;
+		center?: boolean;
 		children: Snippet;
 	} = $props();
 
@@ -31,6 +33,7 @@
 	style:--gradient-width={overflowing ? '10px' : '0px'}
 	style:--gap={overflowing ? `${gap}px` : '0px'}
 	style:--hover-state={pauseOnHover ? 'paused' : 'play'}
+	style:--marquee-justify-content={center ? 'center' : 'flex-start'}
 >
 	<div
 		class={`marquee ${overflowing ? 'scroll-animation' : ''}`}
@@ -83,7 +86,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: var(--marquee-justify-content);
 		padding-right: var(--gap);
 	}
 

@@ -26,22 +26,26 @@
 		height: string;
 	}
 
-	keywords = keywords.concat([
-		'matt gleich',
-		'matt',
-		'gleich',
-		'matthew gleich',
-		'matthew',
-		'gleich',
-		'photography',
-		'coding',
-		'cycling',
-		'rit',
-		'stainless',
-		'bottomline technologies',
-		'kcf technologies',
-		'kcf'
-	]);
+	const mergedKeywords = $derived(
+		keywords
+			.concat([
+				'matt gleich',
+				'matt',
+				'gleich',
+				'matthew gleich',
+				'matthew',
+				'gleich',
+				'photography',
+				'coding',
+				'cycling',
+				'rit',
+				'stainless',
+				'bottomline technologies',
+				'kcf technologies',
+				'kcf'
+			])
+			.join(', ')
+	);
 </script>
 
 <svelte:head>
@@ -51,7 +55,7 @@
 	<meta name="url" content={page.url.href} />
 
 	<meta name="author" content="Matt Gleich" />
-	<meta name="keywords" content={keywords.join(', ')} />
+	<meta name="keywords" content={mergedKeywords} />
 
 	<!-- icons -->
 	<link rel="apple-touch-icon" href={`${iconRoot}/apple-touch-icon.png`} sizes="180x180" />

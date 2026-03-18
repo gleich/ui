@@ -31,8 +31,7 @@
 </script>
 
 <div
-	bind:clientWidth={containerWidth}
-	class="container"
+	class="mask-wrapper"
 	style:--duration={`${duration}s`}
 	style:--delay={`${delay}s`}
 	style:--gradient-width={overflowing ? '10px' : '0px'}
@@ -40,27 +39,25 @@
 	style:--hover-state={pauseOnHover ? 'paused' : 'play'}
 	style:--marquee-justify-content={center ? 'center' : 'flex-start'}
 >
-	<div
-		class={`marquee ${overflowing ? 'scroll-animation' : ''}`}
-		style={overflowing ? 'padding-left: 10px' : ''}
-	>
-		<div bind:clientWidth={marqueeWidth} class="initial-child-container">
-			{@render children()}
+	<div bind:clientWidth={containerWidth} class="container">
+		<div
+			class={`marquee ${overflowing ? 'scroll-animation' : ''}`}
+			style={overflowing ? 'padding-left: 10px' : ''}
+		>
+			<div bind:clientWidth={marqueeWidth} class="initial-child-container">
+				{@render children()}
+			</div>
 		</div>
+		{#if overflowing}
+			<div class="marquee scroll-animation">
+				{@render children()}
+			</div>
+		{/if}
 	</div>
-	{#if overflowing}
-		<div class="marquee scroll-animation">
-			{@render children()}
-		</div>
-	{/if}
 </div>
 
 <style>
-	.container {
-		overflow-x: hidden;
-		display: flex;
-		flex-direction: row;
-		position: relative;
+	.mask-wrapper {
 		mask-image: linear-gradient(
 			to right,
 			transparent 0,
@@ -77,6 +74,13 @@
 		);
 	}
 
+	.container {
+		overflow-x: hidden;
+		display: flex;
+		flex-direction: row;
+		position: relative;
+	}
+
 	.marquee {
 		flex: 0 0 auto;
 		min-width: 100%;
@@ -88,7 +92,7 @@
 		padding-right: var(--gap);
 	}
 
-	.container:hover .scroll-animation {
+	.mask-wrapper:hover .scroll-animation {
 		animation-play-state: var(--hover-state);
 	}
 

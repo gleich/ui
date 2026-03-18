@@ -61,27 +61,20 @@
 		display: flex;
 		flex-direction: row;
 		position: relative;
-	}
-
-	.container::before,
-	.container::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		width: var(--gradient-width);
-		z-index: 2;
-		pointer-events: none;
-	}
-
-	.container::before {
-		left: 0;
-		background: linear-gradient(to right, var(--background), rgba(255, 255, 255, 0));
-	}
-
-	.container::after {
-		right: 0;
-		background: linear-gradient(to left, var(--background), rgba(255, 255, 255, 0));
+		mask-image: linear-gradient(
+			to right,
+			transparent 0,
+			black var(--gradient-width),
+			black calc(100% - var(--gradient-width)),
+			transparent 100%
+		);
+		-webkit-mask-image: linear-gradient(
+			to right,
+			transparent 0,
+			black var(--gradient-width),
+			black calc(100% - var(--gradient-width)),
+			transparent 100%
+		);
 	}
 
 	.marquee {

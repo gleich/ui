@@ -4,7 +4,8 @@
 	const {
 		gap = 15,
 		delay = 2,
-		speed = 30,
+		speed = 20,
+		maxSpeed = 40,
 		pauseOnHover = true,
 		center = true,
 		children
@@ -12,6 +13,7 @@
 		gap?: number;
 		delay?: number;
 		speed?: number;
+		maxSpeed?: number;
 		pauseOnHover?: boolean;
 		center?: boolean;
 		children: Snippet;
@@ -20,8 +22,11 @@
 	let containerWidth = $state(0);
 	let marqueeWidth = $state(0);
 	let overflowing = $derived(containerWidth < marqueeWidth);
+	let effectiveSpeed = $derived(Math.min(speed, maxSpeed));
 	let duration = $derived(
-		marqueeWidth < containerWidth ? containerWidth / speed : (marqueeWidth + gap) / speed
+		marqueeWidth < containerWidth
+			? containerWidth / effectiveSpeed
+			: (marqueeWidth + gap) / effectiveSpeed
 	);
 </script>
 

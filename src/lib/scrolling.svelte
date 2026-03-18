@@ -4,7 +4,7 @@
 	const {
 		gap = 15,
 		delay = 2,
-		speed = 15,
+		speed = 30,
 		pauseOnHover = true,
 		center = true,
 		children
@@ -109,6 +109,15 @@
 	@keyframes scroll {
 		0% {
 			transform: translateX(0%);
+			animation-timing-function: ease-in;
+		}
+		40% {
+			transform: translateX(-50%);
+			animation-timing-function: ease-out;
+		}
+		80% {
+			transform: translateX(-100%);
+			animation-timing-function: step-end;
 		}
 		100% {
 			transform: translateX(-100%);

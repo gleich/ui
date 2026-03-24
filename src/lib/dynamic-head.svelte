@@ -27,24 +27,25 @@
 	}
 
 	const mergedKeywords = $derived(
-		keywords
-			.concat([
-				'matt gleich',
-				'matt',
-				'gleich',
-				'matthew gleich',
-				'matthew',
-				'gleich',
-				'photography',
-				'coding',
-				'cycling',
-				'rit',
-				'stainless',
-				'bottomline technologies',
-				'kcf technologies',
-				'kcf'
-			])
-			.join(', ')
+		[
+			...new Set(
+				keywords.concat([
+					'matt gleich',
+					'matt',
+					'gleich',
+					'matthew gleich',
+					'matthew',
+					'photography',
+					'coding',
+					'cycling',
+					'rit',
+					'stainless',
+					'bottomline technologies',
+					'kcf technologies',
+					'kcf'
+				])
+			)
+		].join(', ')
 	);
 </script>
 
@@ -52,7 +53,6 @@
 	<title>{title}</title>
 	<link rel="canonical" href={page.url.href.replaceAll('http://', 'https://').replace(/\/$/, '')} />
 	<meta name="description" content={description} />
-	<meta name="url" content={page.url.href} />
 
 	<meta name="author" content="Matt Gleich" />
 	<meta name="keywords" content={mergedKeywords} />
@@ -88,11 +88,11 @@
 	<meta property="og:type" content="website" />
 
 	<!-- twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:creator" content="@matt_gleich" />
-	<meta property="twitter:title" content={title} />
-	<meta property="twitter:description" content={description} />
-	<meta property="twitter:image" content={opengraphImage.url} />
-	<meta property="twitter:image:width" content={opengraphImage.width} />
-	<meta property="twitter:image:height" content={opengraphImage.height} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@matt_gleich" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content={opengraphImage.url} />
+	<meta name="twitter:image:width" content={opengraphImage.width} />
+	<meta name="twitter:image:height" content={opengraphImage.height} />
 </svelte:head>

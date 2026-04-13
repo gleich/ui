@@ -2,11 +2,11 @@
 	import type { Snippet } from 'svelte';
 	import Copyright from './copyright.svelte';
 
-	const { children, repo }: { children: Snippet; repo: string } = $props();
+	const { children, repo, fill = true }: { children: Snippet; repo: string; fill?: boolean } = $props();
 </script>
 
 <div class="container">
-	<div class="main">
+	<div class="main" class:fill>
 		<div class="page-content">
 			{@render children()}
 		</div>
@@ -29,9 +29,12 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		flex: 1;
 		max-width: 1040px;
 		padding: 70px 20px;
+	}
+
+	.main.fill {
+		flex: 1;
 	}
 
 	.page-content {

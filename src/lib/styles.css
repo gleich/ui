@@ -1,5 +1,5 @@
 :root {
-	--border-radius: 5px;
+	--border-radius: 8px;
 	--box-shadow-color: rgb(21, 21, 21);
 	--box-shadow: 0px 3px 10px var(--box-shadow-color);
 

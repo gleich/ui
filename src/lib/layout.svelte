@@ -2,7 +2,11 @@
 	import type { Snippet } from 'svelte';
 	import Copyright from './copyright.svelte';
 
-	const { children, repo, fill = true }: { children: Snippet; repo: string; fill?: boolean } = $props();
+	const {
+		children,
+		repo,
+		fill = true
+	}: { children: Snippet; repo: string; fill?: boolean } = $props();
 </script>
 
 <div class="container">

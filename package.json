@@ -1,8 +1,7 @@
 {
 	"name": "@gleich/ui",
-	"version": "1.3.17",
+	"version": "1.4.0",
 	"license": "MIT",
-	"packageManager": "pnpm@10.11.0",
 	"scripts": {
 		"dev": "vite dev --open",
 		"build": "vite build && npm run prepack",
@@ -58,12 +57,5 @@
 	},
 	"keywords": [
 		"svelte"
-	],
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"esbuild",
-			"sharp",
-			"workerd"
-		]
-	}
+	]
 }

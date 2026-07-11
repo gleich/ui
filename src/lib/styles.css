@@ -153,13 +153,6 @@ html {
 
 a {
 	color: var(--blue-foreground);
-	text-underline-offset: 0.2em;
-	text-decoration-thickness: 1px;
-	transition: text-decoration-thickness 0.15s var(--ease);
-}
-
-a:hover {
-	text-decoration-thickness: 2px;
 }
 
 :focus-visible {

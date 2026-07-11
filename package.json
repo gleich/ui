@@ -1,6 +1,6 @@
 {
 	"name": "@gleich/ui",
-	"version": "1.5.2",
+	"version": "1.5.3",
 	"license": "MIT",
 	"packageManager": "pnpm@11.8.0",
 	"scripts": {

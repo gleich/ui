@@ -58,7 +58,6 @@
 
 <style>
 	.mask-wrapper {
-		line-height: normal;
 		mask-image: linear-gradient(
 			to right,
 			transparent 0,

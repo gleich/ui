@@ -10,10 +10,10 @@
 
 <style>
 	div {
-		border: 1px solid var(--border);
+		border: 1px solid var(--button-border);
 		padding: var(--card-padding);
 		border-radius: var(--border-radius);
-		box-shadow: var(--box-shadow);
+		box-shadow: var(--card-shadow);
 		background-color: var(--background);
 		overflow: hidden;
 	}

@@ -149,10 +149,10 @@
 	}
 
 	section {
-		border: 1px solid var(--border);
+		border: 1px solid var(--button-border);
 		padding: 10px;
 		margin: 20px 0;
-		box-shadow: var(--box-shadow);
+		box-shadow: var(--card-shadow);
 		border-radius: var(--border-radius);
 		background-color: var(--background);
 	}

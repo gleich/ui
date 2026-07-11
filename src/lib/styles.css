@@ -229,46 +229,38 @@ h4 {
 }
 
 button {
-	background-color: var(--button-background);
-	background-image: linear-gradient(
-		to bottom,
-		var(--button-gradient-top),
-		var(--button-gradient-bottom)
-	);
-	color: var(--button-foreground);
-	border: 1px solid var(--button-border);
+	background-color: color-mix(in srgb, var(--foreground) 5%, transparent);
+	color: color-mix(in srgb, var(--button-foreground) 82%, transparent);
+	border: none;
 	font-family: inherit;
 	font-size: inherit;
+	font-weight: 600;
+	line-height: 1;
 	border-radius: var(--border-radius);
-	transition:
-		transform 0.12s var(--ease),
-		box-shadow 0.12s var(--ease),
-		filter 0.12s var(--ease);
 	box-shadow:
-		0px 1px 2px rgba(0, 0, 0, 0.25),
-		0px 4px 10px var(--box-shadow-color),
-		inset 0px 1px 0px var(--button-highlight),
-		inset 0px -1px 2px var(--button-inner-shadow);
-	will-change: transform;
+		inset 0 0 0 1px color-mix(in srgb, var(--foreground) 8%, transparent),
+		0 1px 2px rgba(0, 0, 0, 0.15);
+	transition:
+		color 0.15s var(--ease),
+		background-color 0.15s var(--ease),
+		box-shadow 0.15s var(--ease),
+		transform 0.15s var(--ease);
 }
 
 button:hover {
 	cursor: pointer;
-	filter: brightness(1.08);
+	background-color: color-mix(in srgb, var(--foreground) 9%, transparent);
+	color: var(--button-foreground);
 	box-shadow:
-		0px 2px 4px rgba(0, 0, 0, 0.28),
-		0px 6px 14px var(--box-shadow-color),
-		inset 0px 1px 0px var(--button-highlight),
-		inset 0px -1px 2px var(--button-inner-shadow);
+		inset 0 0 0 1px color-mix(in srgb, var(--foreground) 13%, transparent),
+		0 3px 8px rgba(0, 0, 0, 0.22);
 }
 
 button:active {
 	transform: translateY(1px);
-	filter: brightness(0.96);
 	box-shadow:
-		0px 1px 1px rgba(0, 0, 0, 0.2),
-		inset 0px 2px 4px var(--button-inner-shadow),
-		inset 0px 1px 0px transparent;
+		inset 0 0 0 1px color-mix(in srgb, var(--foreground) 10%, transparent),
+		0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 ol,
